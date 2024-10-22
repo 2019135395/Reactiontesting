@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反应时间测试</title>
+    <script src="./js/echarts.min.js"></script>
+    <link rel="stylesheet" href="./css/reactiontime.css">
+    <script type="text/javascript" src="https://cps-check.com/js/jquery-3.5.1.min.js"></script>
+<!--    <script type="text/javascript" src="https://cps-check.com/cn/js/cookie.js?v=1.04"></script>-->
+</head>
+<body>
+<div class="navigation">
+    <div class="navigation-box">
+        <div class="navigation-box-logo">
+            <img src="./img/logo4.png">
+        </div>
+        <div class="navigation-box-nav">
+            <ul>
+                <li>REACTION TIME</li>
+                <li>NUMBER MEMORY</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--home-->
+<div class="banner">
+    <div class="banner-box">
+        <div class="banner-box">
+            <div class="banner-box-info">
+                <div class="banner-box-info-logo"></div>
+                <h1>Human Benchmark</h1>
+                <h2>Measure your abilities with brain games and cognitive tests.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!--info-->
+<div class="info">
+    <div class="info-box">
+        <div id="reaction" state="0">
+            <div class="info-box-text">
+                <div id="reaction-text">
+                    <p class="r-main">When the red box turns green, click as quickly as you can.</p>
+                    <p>Click anywhere to start.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="reaction-history"></div>
+
+    </div>
+</div>
+<!--report-->
+<div class="report">
+    <div class="report-box">
+        <h2>Statistics</h2>
+        <div id="curve"></div>
+    </div>
+</div>
+
+<!--About the test-->
+<div class="about-test">
+    <div class="about-test-box">
+        <h2>About the test</h2>
+        <p>This is a simple tool to measure your reaction time.</p>
+        <p>The average (median) reaction time is 273 milliseconds, according to the data collected so far.</p>
+        <p>In addition to measuring your reaction time, this test is affected by the latency of your computer and monitor. Using a fast computer and low latency / high framerate monitor will improve your score.</p>
+        <p>Scores in this test are faster than the aim trainer test, because you can react instantly without moving the cursor.</p>
+        <p>This is discussed in further detail on the the statistics page. While an average human reaction time may fall between 200-250ms, your computer could be adding 10-50ms on top. Some modern TVs add as much as 150ms!</p>
+        <p>If you want, you can keep track of your scores, and see your full history of reaction times.</p>
+        <p>Just perform at least 5 clicks and then save.</p>
+    </div>
+</div>
+
+<!--alrtData-->
+<div class="alertData">
+    <div class="alertData-box">
+        <div id="curvetwo"></div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="footer-box"></div>
+</div>
+<script type="text/javascript">
+    var textStart = '<p class="r-main">When the red box turns green, click as quickly as you can.</p><p>Click anywhere to start.</p>';
+    var textWait = '<p class="r-main r-fontd">Wait for green</p>';
+    var textClick = '<p class="r-main r-fontd">Click！</p>';
+    var textResult = '<p class="r-main r-fontd"><span id="reaction-time"></span> ms</p><p>Click to keep going</p>';
+    var textFalse = '<p class="r-main">Too soon！</p> <p>Click to try again.</p>';
+    var textSave='<p class="r-main r-fontd"><span id="reaction-time"></span> ms</p><p>Save your score to see how you compare.</p><div class="info-box-bc" id="info-box-bc-show"><div  class="info-box-bc-btn">Save score</div><a href=""><div class="info-box-bc-btn-r" id="myButton">Try again</div></a></div>';
+    var textBest = '最佳结果：<span id="best-ms"></span> 毫秒。';
+    var textPrev = '上一个：<span id="last-ms"></span> 毫秒。';
+</script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="./js/reactiontime.js"></script>
+</body>
+</html>

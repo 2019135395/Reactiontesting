@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Benchmark-Dashborad</title>
+    <meta name="keywords" content="brain games, leaderboards, user profile, statistics" data-react-helmet="true">
+    <meta name="description" content="Brain game statistics.">
+    <script src="./js/echarts.min.js"></script>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="navigation">
+    <div class="navigation-box">
+        <div class="navigation-box-logo">
+            <img src="./img/logo4.png" alt="Human Benchmark">
+        </div>
+        <div class="navigation-box-nav">
+            <ul>
+                <a href="index.html"><li>REACTION TIME</li></a>
+                <a href="dashboard.html"><li class="nav-li-hover">DASHBOARD</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--info-->
+<div class="info">
+    <div class="info-box">
+        <div class="info-box-user">
+            <h1>Human Benchmark-Dashborad</h1>
+            <h6>Username</h6>
+            <h5>Guest user</h5>
+        </div>
+
+        <div class="info-box-data">
+            <h6>Reaction Time</h6>
+            <h5 id="userAverage">0</h5>
+            <span>ms</span>
+            <h6><font id="account">0% </font>percentile</h6>
+            <a href="index.html"><div class="info-box-data-btn">Play</div></a>
+        </div>
+
+        <div class="info-box-results">
+            <h6>Recent Reaction Time Results</h6>
+            <div class="info-results-bg">
+                <div id="curvetwo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<div class="footer">
+    <div class="footer-box">
+        <p class="footer-box-t">Copyright 2024 Human Benchmark</p>
+        <p class="footer-box-tw"><a href="privacy.html">Privacy Policy</a></p>
+        <p class="footer-box-tw">Licensing</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="./js/dash.js"></script>
+</body>
+</html>
